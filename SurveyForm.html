@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="SurveyFormStyle.css">
+    </head>
+    <body>
+    <header class="header">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Thanks for taking your time to see my first project!</p>
+    </header>
+
+    <form action="" id="survey-form">
+      <div class="div form-group">
+          <label for="name" class="form-prompt">Name</label>
+          <input type="text" id="name" required placeholder="Enter your name">
+     </div>
+     <div class="div form-group">
+          <label for="email" class="form-prompt">Email</label>
+          <input type="email" id="email" required placeholder="Enter your email">
+     </div>
+     <div class="div form-group">
+          <label for="age" class="form-prompt">Age(optional)</label>
+          <input type="number" min="16" max="80" id="age"  placeholder="Enter your age">
+     </div>
+
+     <div class="form-group">
+          <label for="" class="form-prompt">
+            What would you like to do?
+          </label>
+          <select name="select-role" id="select-role">
+              <option value="select" class="option">Please select one</option>
+              <option value="frontend" class="option">Frontend Development</option>
+              <option value="backend" class="option">Backend Development</option>
+              <option value="full-stack" class="option">Full-Stack Development</option>
+              <option value="software-dev" class="option">Software Development</option>
+              <option value="other" class="option">Other</option>
+          </select>
+     </div>
+
+     <div class="form-group">
+       <label for="" class="form-prompt">
+        Would you recommend someone to try Web Development?
+       </label>
+       <label>
+         <input 
+           type="radio" 
+           value="Definitely" 
+           name="dev-recommend" 
+           class="radio-dev-recommend"
+           checked
+         />
+         Definitely    
+       </label>
+       <label>
+        <input 
+          type="radio" 
+          value="Maybe" 
+          name="dev-recommend" 
+          class="radio-dev-recommend"
+          checked
+        />
+        Maybe   
+      </label>
+      <label>
+         <input 
+           type="radio" 
+           value="Not-Sure" 
+           name="dev-recommend" 
+           class="radio-dev-recommend"
+           checked
+         />
+         Not Sure    
+      </label>
+     </div>
+
+     <div class="form-group">
+         <label for="" class="form-prompt">What is your favorite feature of freeCodeCamp?</label>
+         <label>
+            <input type="checkbox" value="Challenges" name="feature" class="feature"/>
+            Challenges   
+         </label>
+         <label>
+            <input type="checkbox" value="Projects" name="feature" class="feature"/>
+            Projects  
+         </label>
+         <label>
+            <input type="checkbox" value="Community" name="feature" class="feature"/>
+            Community  
+         </label>
+         <label>
+            <input type="checkbox" value="Open Source" name="feature" class="feature"/>
+            Open Source   
+         </label>
+     </div>
+
+     <div class="form-group">
+         <label for="comments" class="form-prompt">Any comments or suggestions?</label>
+         <textarea name="comments" id="comments" cols="100" rows="10" placeholder="Enter your comment here..."></textarea>
+     </div>
+     <button class="submit-button" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
